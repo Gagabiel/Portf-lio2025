@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acessibilidade na Web - Portfolio Profissional</title>
+
+    <!-- Linkando o arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link para o Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header fixo -->
+    <header>
+        <div class="logo">
+            <h1>Portfolio Web</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#seguranca">Segurança Digital</a></li>
+                <li><a href="#matematica">Matemática Aplicada</a></li>
+                <li><a href="#grafico">Gráficos</a></li>
+                <li><a href="#mais-informacoes">Mais Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Acessibilidade -->
+        <section id="acessibilidade" class="section-hidden">
+            <h2>Acessibilidade na Web: Melhorando a Experiência do Usuário</h2>
+            <p class="introducao">
+                A acessibilidade digital visa garantir que todos, independentemente de suas deficiências, possam acessar e interagir com conteúdo online de maneira eficiente.
+            </p>
+
+            <!-- Imagem menor com texto ao lado -->
+            <div class="imagem-info-lado">
+                <img src="img/20231006acessibilidadedigital1-freepik.jpg" alt="Paisagem Montanhosa" />
+                <div class="texto-lateral">
+                    <h3>Por que a acessibilidade importa?</h3>
+                    <p>
+                        A acessibilidade na web permite que pessoas com deficiência visual, auditiva ou motora naveguem com facilidade.
+                        Isso é um direito garantido por lei e um passo importante rumo à inclusão digital e igualdade de oportunidades.
+                    </p>
+                    <p>
+                        Sites acessíveis também melhoram o SEO, aumentam o alcance e proporcionam uma experiência de usuário mais intuitiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-expandivel">
+                <button class="expandir-btn">Veja Mais Sobre Acessibilidade</button>
+                <div class="informacoes-expandidas">
+                    <p><strong>Acessibilidade Digital</strong> é fundamental para garantir uma internet inclusiva. Com o uso crescente de tecnologias assistivas, como leitores de tela e teclados adaptativos, a web acessível é uma necessidade.</p>
+                    <p>As diretrizes de acessibilidade (WCAG) estabelecem regras para garantir que conteúdos online sejam acessíveis para todos.</p>
+                </div>
+            </div>
+
+            <h3>Boas Práticas de Acessibilidade</h3>
+            <ul class="praticas-lista">
+                <li>Uso de <strong>textos alternativos</strong> (atributo <code>alt</code>) para imagens.</li>
+                <li>Contraste adequado entre texto e fundo, conforme as diretrizes WCAG.</li>
+                <li>Uso de elementos de navegação semânticos, como <code>header</code>, <code>footer</code>, <code>nav</code>, <code>main</code>.</li>
+                <li>Garantir que formulários sejam acessíveis, com rótulos visíveis.</li>
+            </ul>
+
+            <!-- Gráfico de pizza reduzido -->
+            <div class="grafico-container">
+                <h3>Distribuição de Sites Acessíveis</h3>
+                <canvas id="grafico-a11y-canvas"></canvas>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1603033495945-44ab4905e5f5?auto=format&fit=crop&w=900&q=80" alt="Floresta Densa" class="imagem-destaque" />
+        </section>
+
+        <!-- Segurança Digital -->
+        <section id="seguranca" class="section-hidden">
+            <h2>Segurança Digital: Protegendo suas Informações Pessoais</h2>
+            <p class="introducao">
+                A segurança digital é crucial para proteger dados sensíveis de ataques cibernéticos. Vamos explorar como a matemática pode ser aplicada para criar senhas fortes e sistemas seguros.
+            </p>
+
+            <div class="info-expandivel">
+                <button class="expandir-btn">Veja Mais Sobre Segurança Digital</button>
+                <div class="informacoes-expandidas">
+                    <p>O uso de senhas fortes e criptografia é essencial para proteger informações online. A matemática aplicada, como as funções hash e a criptografia assimétrica, é a base de muitos sistemas de segurança modernos.</p>
+                    <p><strong>Exemplo:</strong> Uma senha segura deve incluir caracteres especiais, números e letras maiúsculas/minúsculas. Além disso, deve ter um comprimento de pelo menos 12 caracteres.</p>
+                </div>
+            </div>
+
+            <h3>Matemática na Criptografia</h3>
+            <p>
+                A criptografia usa conceitos de teoria dos números e álgebra para criar sistemas seguros de comunicação. A criptografia RSA, por exemplo, é baseada na dificuldade de fatorar grandes números primos.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1593642634311-df26dfc1b46d?auto=format&fit=crop&w=900&q=80" alt="Imagem de segurança digital" class="imagem-destaque" />
+        </section>
+
+        <!-- Matemática Aplicada -->
+        <section id="matematica" class="section-hidden">
+            <h2>Projeto de Vida: Organizando Objetivos Futuros com Matemática Aplicada</h2>
+            <p class="introducao">
+                A matemática pode ser uma poderosa aliada na organização de objetivos futuros. Através de modelos de otimização, podemos criar planos eficientes e mensuráveis para alcançar nossas metas.
+            </p>
+
+            <div class="info-expandivel">
+                <button class="expandir-btn">Veja Mais Sobre Matemática Aplicada</button>
+                <div class="informacoes-expandidas">
+                    <p>Por exemplo, a utilização de álgebra linear e programação linear pode ajudar a otimizar recursos para atingir objetivos de forma mais eficiente.</p>
+                    <p><strong>Exemplo Prático:</strong> Planejar o crescimento de uma empresa usando modelos matemáticos pode garantir um uso mais racional dos recursos financeiros e humanos.</p>
+                </div>
+            </div>
+
+            <h3>Função de Crescimento Exponencial</h3>
+            <p>
+                A fórmula <code>f(t) = P * e^(rt)</code> é um modelo utilizado para prever crescimento populacional ou financeiro ao longo do tempo, onde <code>r</code> é a taxa de crescimento, <code>t</code> é o tempo e <code>P</code> é a população inicial.
+            </p>
+        </section>
+
+        <!-- Gráficos -->
+        <section id="grafico" class="section-hidden">
+            <h2>Gráficos Interativos</h2>
+            <p>Agora vamos ver um gráfico dinâmico que ilustra dados sobre acessibilidade digital ao longo do tempo.</p>
+
+            <div class="grafico-container">
+                <canvas id="grafico-tempo"></canvas>
+            </div>
+        </section>
+
+        <!-- Mais Informações -->
+        <section id="mais-informacoes" class="section-hidden">
+            <h2>Mais Informações sobre Acessibilidade, Segurança Digital e Matemática</h2>
+            <p>Aqui estão alguns links e recursos adicionais para expandir ainda mais o seu conhecimento nos temas abordados.</p>
+
+            <ul class="links">
+                <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer">WCAG - Diretrizes de Acessibilidade</a></li>
+                <li><a href="https://www.turing.com/kb/understanding-the-basics-of-encryption" target="_blank" rel="noopener noreferrer">Criptografia e Segurança Digital</a></li>
+                <li><a href="https://www.khanacademy.org/math/linear-algebra" target="_blank" rel="noopener noreferrer">Curso de Álgebra Linear (Khan Academy)</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank" rel="noopener noreferrer">Introdução ao Python - Codecademy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Acessibilidade na Web | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
