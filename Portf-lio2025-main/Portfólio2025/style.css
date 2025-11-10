@@ -1,0 +1,232 @@
+/* =============================
+   ESTILO GLOBAL
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+
+/* =============================
+   CABEÇALHO E MENU
+============================= */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    margin-top: .5rem;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s, transform .2s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* =============================
+   SEÇÕES
+============================= */
+.content-section {
+    max-width: 950px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00000070;
+    transition: transform .3s, box-shadow .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00000090;
+}
+
+h2 {
+    color: #58a6ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px #00000060;
+}
+
+/* =============================
+   IMAGENS DAS SEÇÕES
+============================= */
+.section-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0 1.5rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(0.9);
+    transition: filter .3s;
+}
+
+.section-img:hover {
+    filter: brightness(1.1);
+}
+
+/* =============================
+   BOTÕES
+============================= */
+.btn {
+    background: #238636;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background .3s, transform .2s;
+}
+
+.btn:hover {
+    background: #2ea043;
+    transform: scale(1.05);
+}
+
+/* =============================
+   BLOCO DE EXEMPLOS
+============================= */
+.example {
+    display: none;
+    margin-top: 1rem;
+    background: #0d1117;
+    padding: 1rem;
+    border-left: 4px solid #58a6ff;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* =============================
+   INTERATIVOS
+============================= */
+.interactive-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+input {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #58a6ff;
+}
+
+/* =============================
+   CITAÇÕES
+============================= */
+blockquote {
+    border-left: 4px solid #58a6ff;
+    padding-left: 1rem;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #9da5b4;
+}
+
+/* =============================
+   LINKS EXTERNOS
+============================= */
+.external-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s, transform .2s;
+}
+
+.external-link:hover {
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* =============================
+   RODAPÉ
+============================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    background: #0f131a;
+}
+
+.more-info {
+    display: block;
+    margin-top: 1rem;
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color .3s;
+    font-weight: bold;
+}
+
+.more-info:hover {
+    color: #ffd700;
+}
+
+/* =============================
+   RESPONSIVIDADE
+============================= */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    .content-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .section-img {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

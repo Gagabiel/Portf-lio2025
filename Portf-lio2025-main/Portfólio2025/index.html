@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio Interativo</h1>
+        <p class="subtitle">Tecnologia, Matemática e Inteligência Artificial</p>
+        <nav>
+            <ul id="menu">
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#projeto-vida">Projeto de Vida</a></li>
+                <li><a href="#seguranca">Segurança Digital</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+                <li><a href="#tecnicas">Técnicas Computacionais</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#dados">Ciência de Dados</a></li>
+                <li><a href="#intro-comp">Introdução à Computação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Acessibilidade -->
+        <section id="acessibilidade" class="content-section">
+            <h2>Acessibilidade na Web: Melhorando a Experiência do Usuário</h2>
+            <img src="20231006acessibilidadedigital1-freepik.jpg" alt="Imagem representando acessibilidade digital" class="section-img">
+            <p>A acessibilidade na web garante que todos, independentemente de suas limitações, possam navegar e compreender o conteúdo. O design inclusivo melhora a experiência de todos os usuários.</p>
+            
+            <button class="btn" onclick="toggleExample('acessibilidade-exemplo')">Ver exemplo prático</button>
+            <div id="acessibilidade-exemplo" class="example">
+                <pre><code>&lt;img src="logo.png" alt="Logo do site com fundo azul e texto branco"&gt;</code></pre>
+            </div>
+            <a href="https://github.com/Gagabiel/1-tri-3C" class="external-link" target="_blank">🔗Saiba mais sobre acessibilidade</a>
+        </section>
+
+        <!-- Projeto de Vida -->
+        <section id="projeto-vida" class="content-section">
+            <h2>Projeto de vida: Organizando objetivos futuros com matemática aplicada</h2>
+            <img src="220524-site-xp-09.webp" alt="Imagem de planejamento de metas" class="section-img">
+            <p>Com base na matemática, é possível definir metas concretas e medir o progresso em direção aos objetivos. O uso de projeções financeiras ajuda na tomada de decisões conscientes.</p>
+
+            <div class="interactive-card">
+                <label>Meta financeira (R$):</label>
+                <input type="number" id="meta" placeholder="Ex: 10000">
+                <label>Valor poupado por mês (R$):</label>
+                <input type="number" id="mensal" placeholder="Ex: 500">
+                <button class="btn" onclick="calcularTempo()">Calcular tempo estimado</button>
+                <p id="resultadoTempo"></p>
+            </div>
+
+            <a href="https://github.com/Gagabiel/Meus-onjetivos" class="external-link" target="_blank">🔗 Saiba mais sobre planejamento matemático</a>
+        </section>
+
+        <!-- Segurança Digital -->
+        <section id="seguranca" class="content-section">
+            <h2>Segurança Digital: Utilizando Matemática para Programar Senhas Seguras</h2>
+            <img src="criptografia.jpg" alt="Cadeado representando segurança digital" class="section-img">
+            <p>Senhas seguras usam entropia matemática e aleatoriedade para evitar ataques. Veja abaixo um gerador de senha simples e eficaz.</p>
+            <button class="btn" onclick="gerarSenha()">Gerar senha segura</button>
+            <p id="senhaGerada"></p>
+
+            <a href="https://github.com/Gagabiel/biel2tri3C" class="external-link" target="_blank">🔗 Saiba mais sobre segurança digital</a>
+        </section>
+
+        <!-- Funções -->
+        <section id="funcoes" class="content-section">
+            <h2>Funções: Criando uma Missão sobre Inteligência Artificial</h2>
+            <img src="f73feb0d-a767-4d43-a8c1-0639a9769a8d.webp" alt="Ilustração de códigos e IA" class="section-img">
+            <p>Funções são blocos reutilizáveis que tornam o código limpo e eficiente. Vamos usar uma função simples para gerar uma missão personalizada.</p>
+            <pre><code>function missaoIA(nome) {
+    return `Olá, ${nome}! Sua missão é ensinar a IA a pensar de forma ética e criativa.`;
+}</code></pre>
+            <button class="btn" onclick="mostrarMissao()">Executar Função</button>
+            <p id="missaoResultado"></p>
+
+            <a href="https://github.com/Gagabiel/ofuturodaIA3Cgabriel" class="external-link" target="_blank">🔗 Saiba mais sobre funções e IA</a>
+        </section>
+
+        <!-- Técnicas Computacionais -->
+        <section id="tecnicas" class="content-section">
+            <h2>Técnicas Computacionais: Reflexão sobre Inteligência Artificial na Escola</h2>
+            <img src="Inteligencia-Artificial-nas-Escolas-Avanco-ou-Retrocesso-na-Educacao.png" alt="Imagem de alunos com computadores" class="section-img">
+            <p>A IA na educação deve servir como apoio, nunca como substituto. O papel do professor é insubstituível no desenvolvimento humano.</p>
+            <blockquote>"A tecnologia deve servir à educação, e não substituí-la." — Reflexão Computacional</blockquote>
+
+            <a href="" class="external-link" target="_blank">🔗 Saiba mais sobre IA na educação</a>
+        </section>
+
+        <!-- Introdução a Python -->
+        <section id="python" class="content-section">
+            <h2>Introdução a Python: Desafios de Programação</h2>
+            <img src="2022-07-19-Melhores-cursos-de-Python.jpg" alt="Logo da linguagem Python" class="section-img">
+            <p>Python é uma linguagem acessível e poderosa. Tente resolver o desafio abaixo:</p>
+            <pre><code>n = int(input("Digite um número: "))
+if n % 2 == 0:
+    print("Número par!")
+else:
+    print("Número ímpar!")</code></pre>
+
+            <a href="https://colab.research.google.com/drive/1u3q3W-MvXO90OAApWzZjS3Kp302Y1nWi#scrollTo=_RQTwEHjF6Wg" class="external-link" target="_blank">🔗 Saiba mais sobre Python</a>
+        </section>
+
+        <!-- Ciência de Dados -->
+        <section id="dados" class="content-section">
+            <h2>Ciência de Dados: Construindo uma Análise com Python</h2>
+            <img src="0_i3_jSDxPGjGUlIE9.jpg" alt="Gráfico de dados" class="section-img">
+            <p>A análise de dados transforma números em conhecimento. Python e bibliotecas como Pandas e Matplotlib tornam isso acessível.</p>
+            <pre><code>import pandas as pd
+import matplotlib.pyplot as plt
+
+dados = pd.read_csv("vendas.csv")
+plt.plot(dados["Mês"], dados["Vendas"])
+plt.title("Análise de Vendas Mensais")
+plt.show()</code></pre>
+
+            <a href="https://colab.research.google.com/drive/1WOrhDef_cJByAarJPfkogIJW9wtyJvhu" class="external-link" target="_blank">🔗 Saiba mais sobre ciência de dados</a>
+        </section>
+
+        <!-- Introdução à Computação -->
+        <section id="intro-comp" class="content-section">
+            <h2>Introdução à Computação: Ambientes e Ferramentas de Programação</h2>
+            <img src="ferramentas-colaborativas.png.webp" alt="Ambiente de programação em um notebook" class="section-img">
+            <p>Conhecer ambientes como VSCode, Replit e Jupyter facilita o desenvolvimento e a colaboração entre programadores.</p>
+
+            <a href="" class="external-link" target="_blank">🔗 Saiba mais sobre ferramentas de programação</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabriel Henrique dos Santos Piornedo com 💻 e criatividade — 2025</p>
+        <a href="https://www.youtube.com/watch?v=KmH5QICshpI&t=1s" class="more-info" target="_blank">ℹ️ Clique aqui para mais informações ou dúvidas (vídeo sobre acessibilidade)</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
